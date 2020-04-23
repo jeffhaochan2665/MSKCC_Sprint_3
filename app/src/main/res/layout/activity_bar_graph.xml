@@ -27,7 +27,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:src="@drawable/profile"
+        android:src="@drawable/john"
         android:scaleType="fitXY"
         />
 
@@ -35,16 +35,16 @@
         <customfonts.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32dp"
-            android:textColor="@color/white"
-            android:text="Nicole James"
-            android:paddingLeft="16dp"
             android:layout_gravity="bottom"
             android:layout_marginBottom="52dp"
+            android:paddingLeft="16dp"
+            android:text="John Lam"
+            android:textColor="@color/darkTextColor"
+            android:textSize="32dp"
 
             />
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:textSize="14dp"
         android:textColor="@color/FormTextColor"
-        android:text="FEBRUARY"
+        android:text="April"
         android:paddingLeft="16dp"
 
         />
@@ -108,8 +108,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14dp"
-            android:textColor="@color/lightTextColor"
-            android:text="2015"
+            android:textColor="@color/darkTextColor"
+            android:text="2020"
             android:paddingLeft="16dp"
 
 
@@ -215,20 +215,20 @@
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="28dp"
+                android:layout_gravity="center"
+                android:text="3519"
                 android:textColor="@color/darkTextColor"
-                android:text="57"
-                android:layout_gravity="center"/>
+                android:textSize="28dp" />
 
             <customfonts.MyTextView
                 android:id="@+id/sub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12dp"
-                android:textColor="@color/lightTextColor"
-                android:text="COMPLETED"
+                android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:layout_gravity="center"/>
+                android:text="Yesterday"
+                android:textColor="@color/lightTextColor"
+                android:textSize="12dp" />
 
             <LinearLayout
                 android:id="@+id/line"
@@ -255,10 +255,10 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="28dp"
+                android:layout_gravity="center"
+                android:text="3785"
                 android:textColor="@color/darkTextColor"
-                android:text="19"
-                android:layout_gravity="center"/>
+                android:textSize="28dp" />
 
             <customfonts.MyTextView
 
@@ -266,7 +266,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:textColor="@color/lightTextColor"
-                android:text="SNOOZED"
+                android:text="Average Step"
                 android:layout_marginTop="4dp"
                 android:layout_gravity="center"/>
 
@@ -298,18 +298,18 @@
                 android:layout_height="wrap_content"
                 android:textSize="28dp"
                 android:textColor="@color/darkTextColor"
-                android:text="4"
+                android:text="4679"
                 android:layout_gravity="center"/>
 
             <customfonts.MyTextView
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12dp"
-                android:textColor="@color/lightTextColor"
-                android:text="OVERDUE"
+                android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:layout_gravity="center"/>
+                android:text="Today"
+                android:textColor="@color/lightTextColor"
+                android:textSize="12dp" />
 
             <LinearLayout
 

@@ -29,11 +29,9 @@ public class StackedCardOne extends CardController {
 
     private final StackBarChartView mChart;
 
-    private final String[] mLabels= {"1", "3", "6", "9", "12", "15", "18", "21", "24", "27", "30", "31"};
+    private final String[] mLabels= {"Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun", };
     private final float [][] mValuesOne = {
-            {03f, 40f, 25f, 25f, 11f, 25f, 25f, 3f, 30f, 2f, 40f, 25f},
-            {15f, 12f, 25f, 40f, 2f, 30f, 40f, 30f, 3f, 25f, 25f, 25f},
-            {30f, 3f, 25f, 25f, 20f, 25f, 25f, 30f, 4f, 25, 25, 4f} };
+            {15f, 17f, 25f, 25f, 11f, 25f, 13f}};
 
 
     public StackedCardOne(CardView card){
@@ -113,13 +111,13 @@ public class StackedCardOne extends CardController {
         mChart.addData(stackBarSet);
 
 
-        stackBarSet = new BarSet(mLabels, mValuesOne[1]);
+        /*stackBarSet = new BarSet(mLabels, mValuesOne[1]);
         stackBarSet.setColor(Color.parseColor("#fea956"));
         mChart.addData(stackBarSet);
 
         stackBarSet = new BarSet(mLabels, mValuesOne[2]);
         stackBarSet.setColor(Color.parseColor("#b879fc"));
-        mChart.addData(stackBarSet);
+        mChart.addData(stackBarSet);*/
 
         mChart.setBarSpacing(Tools.fromDpToPx(15));
         mChart.setRoundCorners(Tools.fromDpToPx(1));
@@ -130,7 +128,7 @@ public class StackedCardOne extends CardController {
                 .setYLabels(YController.LabelPosition.NONE)
                 .setValueThreshold(89.f, 89.f, thresPaint);
 
-        int[] order = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+        int[] order = {0, 1, 2, 3, 4, 5, 6};
         mChart.show(new Animation()
                 .setOverlap(.5f, order)
                 .setEndAction(action));
@@ -158,7 +156,7 @@ public class StackedCardOne extends CardController {
     public void dismiss(Runnable action) {
         super.dismiss(action);
 
-        int[] order = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+        int[] order = {0, 1, 2, 3, 4, 5, 6};
         mChart.dismiss(new Animation()
                 .setOverlap(.5f, order)
                 .setEndAction(action));
