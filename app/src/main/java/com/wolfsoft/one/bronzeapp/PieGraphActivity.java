@@ -23,8 +23,8 @@ public class PieGraphActivity extends AppCompatActivity {
 
     int value1, value2,value3;
 
-    private String[] TITLE = {"Shop","Work","Health","Travel","Bills","Auto","Shop","Work"};
-    private String[] SUB_TITLE = {"25","12","8","56","6","33","11","6"};
+    private String[] TITLE = {"Mobility Trends","Emotion trends","See Recommendations"};
+    private String[] SUB_TITLE = {"view details","view details","view details"};
     private String[] COLORS = {"#FF4081","#4cd2c7","#8284ab","#d7dafd","#faa75b","#f2c2ec","#ff527d","#4cd2c7","#8284ab"};
 
     private ArrayList<GraphList> graphListArrayList;
