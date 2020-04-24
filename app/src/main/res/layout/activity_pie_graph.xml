@@ -228,5 +228,14 @@
         android:textColor="#FFFFFF"
         android:onClick="toStickyListViewActivity"/>
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#73E478"
+        android:text="View history"
+        android:textColor="#FFFFFF"
+        android:onClick="toBigCalendarActivity"/>
+
 
 </LinearLayout>

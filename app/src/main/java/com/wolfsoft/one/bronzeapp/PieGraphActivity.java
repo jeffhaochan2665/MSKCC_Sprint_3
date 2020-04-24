@@ -101,4 +101,9 @@ public class PieGraphActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void toBigCalendarActivity(View view) {
+        Intent intent = new Intent(this, BigCalendarActivity.class);
+        startActivity(intent);
+    }
+
 }
