@@ -199,17 +199,31 @@
             />
 
 
-        <ListView
-            android:id="@+id/list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="430dp"></ListView>
-
-
     </FrameLayout>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDEA5A"
+        android:text="see mobility trends"
+        android:textColor="#FFFFFF" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#73DFED"
+        android:text="see emotion trends"
+        android:textColor="#FFFFFF" />
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1C17A"
+        android:text="see recommendations"
+        android:textColor="#FFFFFF" />
 
 
 </LinearLayout>
