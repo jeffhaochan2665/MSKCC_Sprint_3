@@ -68,6 +68,10 @@
             android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".EmotionActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 

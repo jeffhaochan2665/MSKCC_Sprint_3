@@ -15,7 +15,7 @@ public class ListOfAllAppActivity extends AppCompatActivity {
     private AllAppListAdapter allAppListAdapter;
 
     private String[] TITLES = {"Login", "Sign up", "Settings", "Pie Chart", "Bar Graph", "Horizontal Calendar",
-            "Calendar View", "View Pager", "List Layout","Grid Layout","Navigation","Sticky ListView"};
+            "Calendar View", "View Pager", "List Layout","Grid Layout","Navigation","Sticky ListView", "Emotion"};
 
 
     private ArrayList<AllAppList> allAppListArrayList;
@@ -158,6 +158,13 @@ public class ListOfAllAppActivity extends AppCompatActivity {
             case 11 :
 
                 it = new Intent(ListOfAllAppActivity.this, StikListviewActtitvity.class);
+                startActivity(it);
+
+                break;
+
+            case 12 :
+
+                it = new Intent(ListOfAllAppActivity.this, EmotionActivity.class);
                 startActivity(it);
 
                 break;

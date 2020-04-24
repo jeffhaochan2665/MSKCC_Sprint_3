@@ -5,11 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 
 import com.github.mikephil.charting.charts.BarChart;
+import com.wolfsoft.one.bronzeapp.stackedchart.EmotionChart;
 import com.wolfsoft.one.bronzeapp.stackedchart.StackedCardOne;
 
 import java.util.ArrayList;
 
-public class GraphActivity extends AppCompatActivity {
+public class EmotionActivity extends AppCompatActivity {
 
     private BarChart chart;
 
@@ -18,10 +19,11 @@ public class GraphActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bar_graph);
+        setContentView(R.layout.activity_emotion);
 
-        System.out.println("here");
-        (new StackedCardOne((CardView) findViewById(R.id.card5))).init();
+        System.out.println("emotion up");
+        (new EmotionChart((CardView) findViewById(R.id.emotion_chart))).init();
+        System.out.println("emotion down");
 
 //        mCurrFragment = new ChartsFragment();
 //        getSupportFragmentManager()
