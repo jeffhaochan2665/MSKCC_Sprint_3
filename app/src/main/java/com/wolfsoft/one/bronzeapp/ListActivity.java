@@ -5,68 +5,63 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RadioButton;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ListActivity extends AppCompatActivity {
 
-    private ListView list;
-    private ListLayoutAdapter listLayoutAdapter;
-
-    private String[] TITLES = {"Apple", "Banana", "Chikoo", "Orange", "Pineple", "Guava",
-            "Strawberry", "Juice", "Bread","Cheese","Milk","Yogut"};
-
-
-    private ArrayList<List> listArrayList;
-
-
-    // f8f8f9
+    private boolean[] questionsAnswered;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_layout);
+        Arrays.fill(questionsAnswered, false);
+    }
 
-
-        list = (ListView)findViewById(R.id.list);
-
-        listArrayList = new ArrayList<List>();
-
-        for (int i=0; i<TITLES.length; i++){
-
-            List list = new List();
-            list.setTitle(TITLES[i]);
-
-            listArrayList.add(list);
-
+    public void onRadioButtonClick(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+        switch(view.getId()) {
+            case R.id.q1_ans1:
+                questionsAnswered[0] = true;
+                break;
+            case R.id.q1_ans2:
+                questionsAnswered[0] = true;
+                break;
+            case R.id.q1_ans3:
+                questionsAnswered[0] = true;
+                break;
+            case R.id.q1_ans4:
+                questionsAnswered[0] = true;
+                break;
+            case R.id.q2_ans1:
+                questionsAnswered[1] = true;
+                break;
+            case R.id.q2_ans2:
+                questionsAnswered[1] = true;
+                break;
+            case R.id.q2_ans3:
+                questionsAnswered[1] = true;
+                break;
+            case R.id.q2_ans4:
+                questionsAnswered[1] = true;
+                break;
+            case R.id.q3_ans1:
+                questionsAnswered[2] = true;
+                break;
+            case R.id.q3_ans2:
+                questionsAnswered[2] = true;
+                break;
+            case R.id.q3_ans3:
+                questionsAnswered[2] = true;
+                break;
+            case R.id.q3_ans4:
+                questionsAnswered[2] = true;
+                break;
+            default:
+                break;
         }
-
-        listLayoutAdapter = new ListLayoutAdapter(ListActivity.this, listArrayList);
-        list.setAdapter(listLayoutAdapter);
-
-
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
-                if (listArrayList.get(position).isHasRight() == false){
-
-                    listArrayList.get(position).setHasRight(true);
-                }else {
-                    listArrayList.get(position).setHasRight(false);
-                }
-
-
-                listLayoutAdapter.notifyDataSetChanged();
-
-
-
-            }
-        });
-
-
-
-
     }
 }
