@@ -253,7 +253,8 @@
                 android:text="@string/questionnaire_answer_1"
                 android:textColor="#3989AE"
                 android:textSize="14sp"
-                android:typeface="sans" />
+                android:typeface="sans"
+                android:onClick="onRadioButtonClick"/>
 
             <RadioButton
                 android:id="@+id/q3_ans2"

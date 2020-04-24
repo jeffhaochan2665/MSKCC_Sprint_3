@@ -1,8 +1,10 @@
 package com.wolfsoft.one.bronzeapp;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
 
 import com.txusballesteros.widgets.FitChart;
@@ -46,11 +48,11 @@ public class PieGraphActivity extends AppCompatActivity {
 
         }
 
-
+        /*
         list = (ListView) findViewById(R.id.list);
         graphListLayoutAdapter = new GraphListLayoutAdapter(PieGraphActivity.this, graphListArrayList);
         list.setAdapter(graphListLayoutAdapter);
-
+        */
         big = (FitChart)findViewById(R.id.big);
         small2 = (FitChart)findViewById(R.id.small2);
         small1 = (FitChart)findViewById(R.id.small1);
@@ -83,4 +85,20 @@ public class PieGraphActivity extends AppCompatActivity {
         small1.setValues(valuesSmall1);
         small2.setValues(valuesSmall2);
     }
+
+    public void toGraphActivity(View view) {
+        Intent intent = new Intent(this, GraphActivity.class);
+        startActivity(intent);
+    }
+
+    public void toEmotionActivity(View view) {
+        Intent intent = new Intent(this, EmotionActivity.class);
+        startActivity(intent);
+    }
+
+    public void toStickyListViewActivity(View view) {
+        Intent intent = new Intent(this, StikListviewActtitvity.class);
+        startActivity(intent);
+    }
+
 }
