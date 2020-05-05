@@ -266,7 +266,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:textColor="@color/lightTextColor"
-                android:text="Average Step"
+                android:text="Average Step Count"
                 android:layout_marginTop="4dp"
                 android:layout_gravity="center"/>
 

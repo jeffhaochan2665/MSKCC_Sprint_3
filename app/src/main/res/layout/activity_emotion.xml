@@ -226,7 +226,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:text="Anxiety Level"
+                android:text="Calmness"
                 android:textColor="@color/lightTextColor"
                 android:textSize="12dp" />
 
@@ -266,7 +266,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:textColor="@color/lightTextColor"
-                android:text="Depression Level"
+                android:text="Mood"
                 android:layout_marginTop="4dp"
                 android:layout_gravity="center"/>
 
@@ -307,7 +307,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:text="Panic Level"
+                android:text="Stability"
                 android:textColor="@color/lightTextColor"
                 android:textSize="12dp" />
 

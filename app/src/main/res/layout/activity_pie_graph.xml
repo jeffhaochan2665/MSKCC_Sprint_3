@@ -152,14 +152,12 @@
 
             <customfonts.MyTextView
                 android:id="@+id/myTextView4"
-                android:layout_width="415dp"
+                android:layout_width="match_parent"
                 android:layout_height="29dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="58dp"
                 android:layout_marginTop="32dp"
-                android:layout_marginRight="58dp"
                 android:gravity="center"
-                android:text="Anxiety level           depression level          panic level"
+                android:text="Calmness                        Mood                          Stability"
                 android:textColor="@color/white"
                 android:textSize="14dp" />
 
@@ -177,11 +175,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="58dp"
                 android:layout_marginTop="32dp"
-                android:layout_marginRight="58dp"
                 android:gravity="center"
-                android:text="Good job, Your mental health in Feburary is very good, keep it up"
+                android:text="Your mental health in Februrary has been very good!\nKeep it up!"
                 android:textColor="@color/white"
                 android:textSize="14dp" />
 

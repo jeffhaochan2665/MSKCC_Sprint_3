@@ -54,13 +54,14 @@
     <string name="chart_label2">Bicycle Commuting</string>
     <string name="chart_label3">00:15:39</string>
 
-    <string name="questionnaire_prompt">Over the last 2 weeks, how often have you been bothered by any of the following problems?</string>
+    <string name="questionnaire_prompt">Over the last 2 weeks, how often have you been bothered by\nany of the following problems?</string>
     <string name="questionnaire_question_1">1. Little interest or pleasure in doing things.</string>
     <string name="questionnaire_question_2">2. Feeling down, depressed, or hopeless.</string>
-    <string name="questionnaire_question_3">3. Trouble falling or staying asleep, or\n\ \ \ \ sleeping too much.</string>
-    <string name="questionnaire_answer_1">Nearly every day</string>
-    <string name="questionnaire_answer_2">More than half the days</string>
-    <string name="questionnaire_answer_3">Several days</string>
-    <string name="questionnaire_answer_4">Not at all</string>
+    <string name="questionnaire_question_3">3. Trouble falling asleep, staying asleep, or\n\ \ \ \ sleeping too much.</string>
+
+    <string name="questionnaire_answer_1">Not at all</string>
+    <string name="questionnaire_answer_2">Several days</string>
+    <string name="questionnaire_answer_3">More than half the days</string>
+    <string name="questionnaire_answer_4">Nearly every day</string>
 
 </resources>
